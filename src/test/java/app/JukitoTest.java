@@ -9,16 +9,20 @@ import javax.inject.Inject;
 
 import static org.junit.Assert.assertEquals;
 
+// This doesn't work
 @RunWith(JukitoRunner.class)
 @UseModules(MyModule.class)
-public class MyClientTest {
+public class JukitoTest {
 
     @Inject
-    MyClient sut;
+    MyClient myClient;
+    @Inject
+    @MyAnnotation
+    ThirdPartyService thirdPartyService;
 
     @Test
     public void injectionFails() throws Exception {
-        final String actual = sut.doSomething();
+        final String actual = myClient.doSomething();
 
         assertEquals("hello", actual);
     }

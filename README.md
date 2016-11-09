@@ -8,9 +8,9 @@ The test yields:
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running app.MyClientTest
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.322 sec <<< FAILURE!
-initializationError(app.MyClientTest)  Time elapsed: 0.008 sec  <<< ERROR!
+Running app.MyClientJukitoTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.341 sec <<< FAILURE!
+initializationError(app.MyClientJukitoTest)  Time elapsed: 0.006 sec  <<< ERROR!
 java.lang.RuntimeException: com.google.inject.CreationException: Guice creation errors:
 
 1) A binding to app.ThirdPartyService was already configured at org.jukito.JukitoModule.configure(JukitoModule.java:208).
