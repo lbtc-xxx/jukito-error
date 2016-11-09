@@ -1,6 +1,6 @@
 package app;
 
-public interface MyService {
+public interface ThirdPartyService {
 
     String hello();
 }

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 import javax.inject.Inject;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(JukitoRunner.class)
 @UseModules(MyModule.class)
@@ -17,9 +17,9 @@ public class MyClientTest {
     MyClient sut;
 
     @Test
-    public void name() throws Exception {
-        System.out.println(sut);
-        sut.doSomething();
+    public void injectionFails() throws Exception {
+        final String actual = sut.doSomething();
 
+        assertEquals("hello", actual);
     }
 }
