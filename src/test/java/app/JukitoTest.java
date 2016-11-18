@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import static org.junit.Assert.assertEquals;
 
 // This doesn't work
+// As for workaround check JukitoWorkaroundTest.java
 @RunWith(JukitoRunner.class)
 @UseModules(MyModule.class)
 public class JukitoTest {
